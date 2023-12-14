@@ -1,0 +1,124 @@
+/* FLEXBOX: The CSS Flexible Box Module or simply known as Flexbox is a one-dimensional layout model.
+        
+        It allows you to design flexible and efficient layouts, align and distribute space among items in a container. 
+        
+        Flexbox helps you arrange elements in a web page with ease. 
+        
+        -a lot of flexibility
+        -arrange items
+        -spacing
+        -alignment
+        -order of items 
+        
+        Flex Container Properties: 
+        - display
+        - flex-direction
+        - flex-wrap
+        - flex-flow
+        -column-gap
+        -row-gap
+        -gap
+        -justify-content
+        -align-items
+        align-content*/
+
+        body {
+                margin: 0;
+        }
+
+        .container {
+                display: flex; /* display: create either a block level or inline level flex container. 
+                                                        - flex
+                                                        - inline-flex */
+                 height: 800px;
+               /* flex-direction: column;    flex-direction: sets the direction of the main axis.
+                                                        - row 
+                                                        - row-reverse
+                                                        - column
+                                                        - column-reverse */
+                 /* flex-wrap: wrap;  flex-wrap: control the wrapping of flex items within the container 
+                                                        - nowrap
+                                                        - wrap
+                                                        - wrap-reverse*/
+                /* flex-flow: row-reverse wrap;  flex-flow: shorthand for flex direction and flex wrap 
+                                                        - flex-flow: <flex-direction> <flex-wrap> */
+                /* column-gap: 20px;
+                row-gap: 30px; */
+                /* gap: 40px 20px;  Gap properties: Specify the gap between columns using column-gap
+                
+                Specify the gap between rows using row-gap
+                
+                Specify both row and column gap using gap: <row gap> <column gap>
+                
+                - Value can be a non negative value or a percentage */
+                border: 6px solid black;
+                /* justify-content: center; justify-content: Align items and distribute any extra spacing in the parent container. 
+                The alignment is always along the main axis.
+                -flex-start
+                -flex-end
+                -center
+                -space-between
+                -space-around
+                -space-evenly */
+
+                /* align-items: baseline;  align-items: Align items along the cross axis.
+                -flex-start
+                -flex-end
+                -center
+                -baseline
+                -stretch */
+
+                align-content: space-around; /* align-content: Aligns lines of content along the cross axis and distribute any extra spacing in the parent container.
+                -flex-start
+                -flex-end
+                -center
+                -space-between
+                -space-around
+                -stretch*/
+        }
+
+        .flex-item {
+                color: white;
+                font-size: 1.5rem;
+                padding: 1rem;
+                text-align: center;
+        }
+
+        .item-1 {
+                background-color: #b4bf35;
+                padding-bottom: 3rem;
+        }
+
+        .item-2 {
+                background-color: #b95f21;
+                padding-bottom: 5rem;
+        }
+
+        .item-3 {
+                background-color: #1c4c56;
+                padding-bottom: 3rem;
+        }
+
+        .item-4 {
+                background-color: #cfb276;
+        }
+
+        .item-5 {
+                background-color: #6b0803;
+        }
+
+        .item-6 {
+                background-color: #1c4c56;
+        }
+
+        .item-7 {
+                background-color: #b95f21;
+        }
+
+        .item-8 {
+                background-color: #01243a;
+        }
+
+        .item-9 {
+                background-color: #aad041;
+        }
