@@ -30,7 +30,7 @@
                 display: flex; /* display: create either a block level or inline level flex container. 
                                                         - flex
                                                         - inline-flex */
-                 height: 800px;
+                 height: 400px;
                /* flex-direction: column;    flex-direction: sets the direction of the main axis.
                                                         - row 
                                                         - row-reverse
@@ -68,13 +68,17 @@
                 -baseline
                 -stretch */
 
-                align-content: space-around; /* align-content: Aligns lines of content along the cross axis and distribute any extra spacing in the parent container.
+                /*align-content: space-around;  align-content: Aligns lines of content along the cross axis and distribute any extra spacing in the parent container.
                 -flex-start
                 -flex-end
                 -center
                 -space-between
                 -space-around
                 -stretch*/
+
+                /* Flex item properties: order, flex-grow, flex-shrink, flex-basis, flex, align-self*/
+
+                align-items: flex-end;
         }
 
         .flex-item {
@@ -82,37 +86,53 @@
                 font-size: 1.5rem;
                 padding: 1rem;
                 text-align: center;
+               /* flex-grow: 1; default value is 0-items do not grow.
+                flex-grow value of 1 - flex items grow evenly*/
+                /* flex-shrink: 0; /*Default value is 1*/
+                width: 6rem;
         }
 
         .item-1 {
                 background-color: #b4bf35;
-                padding-bottom: 3rem;
+                /*flex-basis: 200px;  default value is auto*/
+                /* flex-grow: 1; */
+                align-self: flex-start; /*align-self: align the items individually.*/
+                
         }
 
         .item-2 {
                 background-color: #b95f21;
-                padding-bottom: 5rem;
+                align-self: flex-end;
+                 
         }
 
         .item-3 {
                 background-color: #1c4c56;
-                padding-bottom: 3rem;
+                 /*order: 1; order: Control the order of items in the flex container.
+                INTEGER value*/
+                /* flex-shrink: 4; */
+                align-self: center;
         }
 
         .item-4 {
                 background-color: #cfb276;
+                align-self: stretch;
         }
 
         .item-5 {
                 background-color: #6b0803;
+                /* flex-grow: 1; */
+                align-self: auto;
         }
 
         .item-6 {
                 background-color: #1c4c56;
+                /* flex-grow: 3; */
         }
 
         .item-7 {
                 background-color: #b95f21;
+                order: 2;
         }
 
         .item-8 {
@@ -121,4 +141,5 @@
 
         .item-9 {
                 background-color: #aad041;
+                order: 1;
         }
