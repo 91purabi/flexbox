@@ -1,0 +1,17 @@
+ .container p {
+    color: blue;
+  }
+  
+  .container > div {
+    background-color: #e0e0e0;
+    padding: 10px;
+  }
+  
+  .box + p {
+    font-weight: bold;
+  }
+  
+  .box ~ p {
+    text-transform: uppercase;
+  }
+  
