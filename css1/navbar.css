@@ -1,0 +1,39 @@
+/* Resetting default margin and padding for all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the navigation bar */
+.navbar {
+    background-color: #310adf; /* Setting the background color of the navigation bar */
+    padding: 10px; /* Adding some padding to create space inside the navogation bar */
+}
+
+/* Styling the navigation list */
+.nav-list {
+    list-style: none; /* Removing default list styles (bullets) */
+    display: flex; /* Using flexbox to create a horizontal list */
+}
+
+/* Styling each list item */
+.nav-list li {
+    margin-right: 15px; /* Adding margin between each list item for spacing */
+}
+
+/* Styling the navigation links */
+.nav-list a {
+    text-decoration: none; /* Removing default underline from links */
+    color: #fff; /* Setting the text color to white */
+    font-weight: bold; /* Making the text bold */
+    font-size: 16px; /* Setting the font size */
+    transition: color 0.3s ease; /* Adding a smooth color transition on hover */
+}
+
+/* Changing link color on hover */
+.nav-list a:hover {
+    color: #ffcc00; /* Changing text color to yellow on hover */ 
+}
+
